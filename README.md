@@ -17,3 +17,14 @@ The engine in question is HEAVILY modified.
   ```conda env export > environment.yml```
 3. or create the env from a snapshot:<br>
   ```conda env create -f environment.yml```
+
+
+## Log Files:
+### naming:
+Logfiles will be in the following format <vehicle_name>_log.yyyyMMddHHmm.csv
+
+### content:
+- Character encoding is iso-8859-1
+- the raw data from the AP has various column header names
+- the final column header starts with "AP Info:" and contains the metadata for the logs
+- Different logs may contain different sets of columns.
